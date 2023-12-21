@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Id ve Class Kullanımı</title>
+    <!-- * tüm içeriği etkile demektir.-->
+    <!-- body vb ilgili alanın tüm içeriği etkile demektir.-->
+    <!-- #id dersek sadece o id'ye ait nesneye özellik verilir-->
+    <!-- İlgili etiketin içerisindeki bir ul'yi değiştirebiliriz.-->
+    <!-- ilgili ul içindeki li'leri çağırdık.-->
+    <!-- Classlar . ve class ismi ile çağırılır-->
+    <style>
+        *{ 
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 20px;
+        }
+        #site-header{
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+        }
+        #main-nav ul{
+            list-style: none;
+        }
+        #main-nav ul li{
+            display: inline;
+            margin-right: 20px;
+        }
+        .menu-link{
+            color: #fff;
+            text-decoration: none;
+        }
+        main{
+            padding: 20px;
+        }
+        .content-section{
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        #site-footer{
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header id="site-header">
+        <h1>Hoş Geldiniz!</h1>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="#" class="menu-link">Anasayfa</a></li>
+                <li><a href="#" class="menu-link">Hakkımızda</a></li>
+                <li><a href="#" class="menu-link">Hizmetlerimiz</a></li>
+                <li><a href="#" class="menu-link">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="intro-section" class="content-section">
+            <h2>Merhaba!</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita error voluptates voluptas suscipit, repudiandae aut corporis quas odit dolorem ab fugiat temporibus ipsa blanditiis tenetur saepe nisi libero, aliquid laudantium.</p>
+        </section>
+        <section id="services-section" class="content-section">
+            <h2>Hizmetler</h2>
+            <ul>
+                <li>Web Tasarım</li>
+                <li>Oyun Geliştirme</li>
+                <li>Veritabanı</li>
+            </ul>
+        </section>
+    </main>
+    <footer id="site-footer">
+        <p>&copy; 2023 Site</p>
+    </footer>
+</body>
+</html>
