@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <!-- Javascript kodlarını bu şekilde script etiketiyle koda ekliyoruz-->
+    <script>
+        function tiklandi(){
+            alert("Butona tıklandı!");
+        }
+        function degistirMetin(){
+            var metinAlani = document.getElementById("metin-alani")
+            metinAlani.innerHTML = "Merhaba bana tıkladığın için teşekkürler"
+        }
+    </script>
+</head>
+<body>
+    <!--Javascript fonksiyonu kullanıldı-->
+    <button onclick="tiklandi()">Tıkla</button>
+
+    <p id="metin-alani">Merhaba bana tıkla!</p>
+    <button onclick="degistirMetin">Tıkla</button>
+</body>
+</html>
