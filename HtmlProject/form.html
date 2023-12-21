@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="form.html" method="post">
+        <label for="ad">Adınız:</label> <!--Inputlardan önce alanı tanımlamak için kullanılır.-->
+        <!--Label etiketindeki for ismi,, inputtaki id değeri ile eşleşirse onun labeli olur-->
+        <input type="text" id="ad" name="ad"> <!--text olarak input almak için-->
+        <br><br>
+
+        <label for="soyad">Soyadınız:</label>
+        <input type="text" name="soyad" id="soyad">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password">
+        <br><br>
+
+        <label for="dogumTarihi">Doğum Tarihiniz:</label>
+        <input type="date" name="dogumTarihi" id="dogumTarihi">
+        <br><br>
+
+        <label for="sehir">Şehir:</label>
+        <select name="sehir" id="sehir">
+            <option value="ankara">Ankara</option>
+            <option value="ankara">İstanbul</option>
+            <option value="ankara">İzmir</option>
+        </select>
+        <br><br>
+
+        <label for="cinsiyet">Cinsiyet:</label>
+        <input type="radio" name="cinsiyet" id="erkek" value="erkek">
+        <label for="erkek">Erkek</label>
+        <input type="radio" name="cinsiyet" id="kadin" value="kadin">
+        <label for="kadin">Kadın</label>
+        <br><br>
+
+        <label for="mesaj">Hakkınızda:</label>
+        <textarea name="mesaj" id="mesaj" cols="30" rows="4"></textarea>
+        <br><br>
+        
+        <button type="submit" value="Gonder">Gonder</button>
+
+    </form>
+</body>
+</html>
